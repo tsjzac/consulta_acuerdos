@@ -1333,11 +1333,7 @@ function Buscar() {
         <td>EXP/023/2024</td>
         <td>Ivan Herrera De Luna</td>
         <td>Juicio PENAL</td>
-        <td>
-            <a href="https://raw.githubusercontent.com/tsjzac/consulta_acuerdos/main/formato.pdf" download>
-                Acuerdo de fecha 2024-08-22
-            </a>
-        </td>
+        <td><a href="https://raw.githubusercontent.com/tsjzac/consulta_acuerdos/main/formato.pdf" download> Acuerdo de fecha 2024-08-22</a></td>
     </tr>
     <tr>
         <td>EXP/002/2023</td>
