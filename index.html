@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Acuerdos - Clon</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- Aquí se pueden añadir enlaces a librerías externas si son necesarias, como Bootstrap o Boxicons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="fixed-top header-transparent">
+        <div id="logo" class="row" style="padding-bottom: 20px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" style="margin-top: -25px;">
+                <a href="#"><img class="d-none d-lg-block" src="https://www.tsjzac.gob.mx/assets/img/logo_nuevo.png" style="height: 112px; margin-bottom: -20px; margin-top: -11px" alt="LogoTSJ" align="right"></a>
+                <a href="#"><img class="d-block d-lg-none" src="https://www.tsjzac.gob.mx/assets/img/logo_nuevo.png" style="height: 75px; margin-bottom: -20px; margin-top: -11px" alt="LogoTSJ" align="right"></a>
+            </div>
+            <div class="col-md-5 d-none d-lg-block"></div>
+            <div class="col-md-2 d-none d-lg-block aos-init aos-animate" data-aos="fade-up">
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <a href="#" target="_blank" class="twitter hvr-float"><i class="bx bxl-twitter twitter_icono" style="margin-bottom: 5px;"></i></a>
+                    </div>
+                    <div class="col-md-1" style="margin-left: 7px;">
+                        <a href="#" target="_blank" class="facebook hvr-float"><i class="bx bxl-facebook facebook_icono"></i></a>
+                    </div>
+                    <div class="col-md-1" style="margin-left: 7px;">
+                        <label class="icono_buscar">
+                            <input type="text" placeholder="Buscar" name="search">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 d-block d-lg-none">
+                <a href="#" target="_blank" class="twitter"><i class="bx bxl-twitter twitter_icono" style="margin-top: 20px; margin-left: 9px;"></i></a>
+                <a href="#" target="_blank" class="facebook"><i class="bx bxl-facebook facebook_icono" style="margin-top: 20px; "></i></a>
+            </div>
+        </div>
+        <div class="d-none d-lg-block" style="background-color: #FFCC33; height: 5px;">
+            <ul>
+                <il>
+                    <a href="#"><br></a>
+                </il>
+            </ul>
+        </div>
+        <div id="navbar">
+            <div class="row">
+                <div id="color-menu" class="col-md-12 d-none d-lg-block" style="padding-bottom: 6px;">
+                    <div class="container header-transparent d-flex justify-content-center">
+                        <nav class="nav-menu d-none d-lg-block">
+                            <ul>
+                                <li class="d-none d-lg-block cerrar"><a href="#"><i class="bx bx-home" style="font-size: 20px;"></i></a></li>
+                                <li class="d-block d-lg-none cerrar"><a href="#">Inicio</a></li>
+                                <li class="drop-down"><a href="#">Tribunal</a>
+                                    <ul>
+                                        <li><a href="#">Historia</a></li>
+                                        <li><a href="#">Presidencia</a></li>
+                                        <li><a href="#">Salas</a></li>
+                                        <li><a href="#">Secretaría General</a></li>
+                                        <li class="drop-down"><a href="#">Juzgados</a>
+                                            <ul>
+                                                <li><a href="#">Familiar</a></li>
+                                                <li><a href="#">Civil</a></li>
+                                                <li><a href="#">Mercantil</a></li>
+                                                <li><a href="#">Penal</a></li>
+                                                <li><a href="#">Laboral</a></li>
+                                                <li><a href="#">Mixto</a></li>
+                                                <li><a href="#">Ejecución de Sanciones</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Tribunal para Adolescentes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drop-down"><a href="#">Órgano de Administración</a>
+                                    <ul>
+                                        <li><a href="#">Consejeros</a></li>
+                                        <li><a href="#">Proceso de selección para Jueces y Magistrados</a></li>
+                                        <li><a href="#">Centro de Justicia Alternativa</a></li>
+                                        <li><a href="#">Centro de Convivencia Familiar Supervisada</a></li>
+                                        <li><a href="#">Escuela Judicial</a></li>
+                                        <li><a href="#">Oficialía Mayor</a></li>
+                                        <li><a href="#">Archivo General</a></li>
+                                        <li><a href="#">Igualdad de Género</a></li>
+                                        <li><a href="#">Biblioteca</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drop-down"><a href="#">Legislación</a>
+                                    <ul>
+                                        <li><a href="#">Constitución Política de los Estados Unidos Mexicanos</a></li>
+                                        <li><a href="#">Constitución Política del Estado Libre y Soberano de Zacatecas</a></li>
+                                        <li><a href="#">Legislación Federal</a></li>
+                                        <li><a href="#">Legislación Estatal</a></li>
+                                        <li><a href="#">Jurisprudencias</a></li>
+                                        <li><a href="#">Tratados Internacionales</a></li>
+                                        <li><a href="#">Buscador Jurídico de la SCJN</a></li>
+                                        <li><a href="#">Semanario Judicial de la Federación</a></li>
+                                        <li class="drop-down"><a href="#">Reglamentos del Poder Judicial de Zacatecas</a>
+                                            <ul>
+                                                <li><a href="#">Ley Orgánica del Poder Judicial</a></li>
+                                                <li><a href="#">Código de ética y conducta del Poder Judicial</a></li>
+                                                <li><a href="#">Fondo Auxiliar y Central de Peritos</a></li>
+                                                <li><a href="#">Ratificación de Juezas y Jueces</a></li>
+                                                <li><a href="#">Reglas de Retiro de Magistrados</a></li>
+                                                <li><a href="#">CECOFAM</a></li>
+                                                <li><a href="#">Archivo General</a></li>
+                                                <li><a href="#">Reglamento Interior de la Escuela de Formación y Especialización</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-down"><a href="#">Reglamento y Líneamientos de la ley General de MASC</a>
+                                            <ul>
+                                                <li><a href="#">Reglamento Interno</a></li>
+                                                <li><a href="#">Lineamientos de Capacitación</a></li>
+                                                <li><a href="#">Lineamientos de Creación de Sistemas de Convenios</a></li>
+                                                <li><a href="#">Lineamientos de Creación de Plataforma Nacional</a></li>
+                                                <li><a href="#">Lineamientos para Evaluación de Personas Facilitadoras</a></li>
+                                                <li><a href="#">Lineamientos para Invitación a Sesiones</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-down"><a href="#">Transparencia</a>
+                                    <ul>
+                                        <li><a href="#">Transparencia</a></li>
+                                        <li><a href="#">Órgano Interno de Control</a></li>
+                                        <li><a href="#">Sentencias Versión Pública</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drop-down"><a href="#">Enlaces</a>
+                                    <ul>
+                                        <li><a href="#">Aplicaciones Intranet</a></li>
+                                        <li><a href="#">Correo Institucional</a></li>
+                                        <li><a href="#">Calendario Laboral 2025</a></li>
+                                        <li><a href="#">Enlaces de Interés</a></li>
+                                        <li><a href="#">Plataforma de Educación Virtual</a></li>
+                                        <li><a href="#">Pre-registro de meritorios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drop-down"><a href="#">Buzón</a>
+                                    <ul>
+                                        <li><a href="#">Contacto</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="services">
+            <div class="container justify-content-center">
+                <div class="row">
+                    <br>
+                    <div class="col-md-12" style="margin-top: 10px; margin-bottom: 10px;">
+                        <div style="background-color: #103453; height: 30px;">
+                            <h4 class="modal-title" style="color: white; margin-left: 5px; padding-top: 3px;">Consulta de Lista de Acuerdos</h4>
+                        </div>
+                        <div style="background-color: #FFCC33; height: 5px;">
+                            <ul>
+                                <il>
+                                    <a href="#"><br></a>
+                                </il>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <div id="contenedor_principal" style="background: linear-gradient(-230deg, rgba(131, 138, 137, 0), rgba(131, 138, 137, 0.192) 50%)">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-6">Seleccione la Instancia</label>
+                                            <div class="col-md-8">
+                                                <select id="instancia" onchange="selecciona_instancia()" class="form-control">
+                                                    <option value="0">Seleccione</option>
+                                                    <option value="1">Primera instancia</option>
+                                                    <option value="2">Segunda Instancia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group" id="sel_area" hidden="">
+                                            <label id="label_area" class="control-label col-md-6">Seleccione el Juzgado</label>
+                                            <div class="col-md-8">
+                                                <select id="area" class="form-control" onchange="selecciona_area()"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group" id="sel_tipo" hidden="">
+                                            <label id="label" class="control-label col-md-6">Seleccione el tipo de búsqueda</label>
+                                            <div class="col-md-8">
+                                                <select id="tipo_busqueda" onchange="selecciona_tipo_busqueda()" class="form-control">
+                                                    <option value="0">Seleccione</option>
+                                                    <option value="1">Buscar por fecha</option>
+                                                    <option value="2" id="optExpediente"></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group" id="datos_busqueda" hidden="">
+                                            <label id="label_busqueda" class="control-label col-md-8">Número Expediente</label>
+                                            <div class="col-md-8">
+                                                <input type="text" id="numero" class="form-control" hidden="" onchange="cambio()" placeholder="Ej. 0025/2019">
+                                                <input type="date" id="fecha" class="form-control" hidden="" onchange="cambio()">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <div class="col-md-1">
+                                                <a href="#" class="btn btn-primary" onclick="Buscar()" id="btnBuscar" hidden="">Buscar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="resultado" hidden="">
+                                <div id="texto_resultado"><h2>Resultado</h2></div>
+                                <table class="table table-responsive" id="tabla" hidden="">
+                                    <thead>
+                                        <tr>
+                                            <th id="columna1">Expediente</th>
+                                            <th id="columna2">Promovente</th>
+                                            <th id="columna3">Juicio</th>
+                                            <th>Acuerdo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                            <label style="text-align: right; float: right; font-size: smaller; margin-right: 15px">Para una visualización adecuada de la página, se recomienda el uso del buscador <strong><a href="https://www.google.com/intl/es/chrome/" target="_blank" style="text-decoration: underline;">GOOGLE CHROME</a></strong></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer">
+        <footer id="footer">
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8" style="text-align: justify;">
+                            <p><strong>Tribunal Superior de Justicia del Estado de Zacatecas</strong> <br> <a class="aviso-privacidad" href="#">Av. Hidalgo No. 699 Col. Centro, Zacatecas. Zac. C.P 98000</a> <br> Tel. 492-922-0075, 492-922-1025, 492-922-5921 y 492-922-1584 <br>
+                            <strong>Palacio de Justicia</strong> <br> <a class="aviso-privacidad" href="#">Blvd. Héroes de Chapultepec No. 2002 Ciudad Gobierno, Zacatecas. Zac. C.P. 98160</a> <br> Tel. 492-925-6760 y 492-925-6771 </p>
+                        </div>
+                        <div class="col-12 col-lg-4 contador_visitas">
+                            <div id="histats_counter"></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="aviso-privacidad d-none d-lg-block" href="#">Aviso de Privacidad</a>
+                <a class="aviso-privacidad d-block d-lg-none" href="#" target="_blank">Aviso de Privacidad</a><br>
+                © Copyright <strong><span>Poder Judicial del Estado de Zacatecas</span></strong>. Todos los Derechos Reservados.
+            </div>
+            <br>
+        </footer>
+    </div>
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
